@@ -1,7 +1,9 @@
+<!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~   11/7/2019   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --->
+<!--- Application Name: ERP Dashboard                                               --->
+<!--- Author(s):        John Kim, Ivan Lopez                                        --->
+<!--- Organization:     Enterprise Resource Department, City of Stockton            --->
+<!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --->
 
-<!---
-	Author: John Kim
---->
 
 <cfscript>
 component attributeName = "attributeValue" {
