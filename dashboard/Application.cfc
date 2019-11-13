@@ -16,6 +16,8 @@
         this.sessiontimeout = createTimeSpan(1,0,0,0);
         this.scriptProtect = "all";
     </cfscript>
+    <!--- hello
+     --->
         <!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --->
 
     <!--- This function triggers whe you boot up Cold Fusion, you will need to restart you server to apply changes to this function --->
