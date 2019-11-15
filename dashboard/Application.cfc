@@ -4,7 +4,7 @@
 <!--- Organization:     Enterprise Resource Department, City of Stockton            --->
 <!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --->
 
-<component attributeName = "attributeValue">
+<cfcomponent attributeName = "Application">
     <!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --->
     <cfscript>
         this.name = "dashboard";
@@ -16,8 +16,6 @@
         this.sessiontimeout = createTimeSpan(1,0,0,0);
         this.scriptProtect = "all";
     </cfscript>
-    <!--- hello
-     --->
         <!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --->
 
     <!--- This function triggers whe you boot up Cold Fusion, you will need to restart you server to apply changes to this function --->
@@ -28,24 +26,23 @@
         application.sessions = 0;
         //Change the name to the application you are making
         application.name = this.name;
+
         </cfscript>
         <cfreturn true>
     </cffunction>
 
     <cffunction name="retrieveCalendarData">
         <cfexchangecalendar action="get" connection="exchangeConnection" name="dailyMeetings">
-            <cfexchangefilter name=""
-        </cfexchangecalendar>
     </cffunction>
 
     <!--- Open connection with John's Outlook --->
     <cffunction name="openExchangeConnection">
-        <cfexchange action="open" connection="exchangeConnection" server="outlook.office365.com" username="john.kim@stocktonca.gov" password="">
+        <cfexchangeconnection action="open" connection="exchangeConnection" server="smtp.office365.com" username="john.kim@stocktonca.gov" password="Knarot413!">
     </cffunction>
 
     <!--- Close connection with John's Outlook --->
     <cffunction name="closeExchangeConnection">
-        <cfexchange action="close" connection="exchangeConnection">
+        <cfexchangeconnection action="close" connection="exchangeConnection">
     </cffunction>
 
     <!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --->
