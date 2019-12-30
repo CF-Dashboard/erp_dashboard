@@ -6,9 +6,16 @@ html,body {
 
 #outlook iframe {
   height:700px;
-   width:100%;
-   float: center;
+  width:70%;
+  float: left;
 }
+
+#newsletter iframe {
+  height:700px;
+  width:29.5%;
+  float: right;
+}
+
 iframe:focus {
   outline: none;
 }
@@ -18,10 +25,10 @@ iframe[seamless] {
 }
 
 #slideshow {
-  margin: 0;
+  margin-left: 1px;
   float: left;
    height:auto;
-   width: 27%;
+   width: 29%;
 }
 
 .slide {
