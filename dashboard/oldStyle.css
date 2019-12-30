@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.calendar {
+  grid-area: calendar;
+  background-color: .f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.meetings {
+  grid-area: meetings;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'calendar calendar meetings'
+    'map media weather_time';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.map,
+.media,
+.weather_time {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.map {
+  grid-area: map;
+}
+
+/* Style the middle column */
+.media {
+  grid-area: media;
+}
+
+/* Style the right column */
+.weather_time {
+  grid-area: weather_time;
+}
+
+/* Style the footer */

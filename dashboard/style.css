@@ -1,49 +1,56 @@
-* {
-  box-sizing: border-box;
+html,body {
+  height:100%;
+  margin: 0;
+  width: 100%
 }
 
-/* Style the header */
-.calendar {
-  grid-area: calendar;
-  background-color: .f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
+#outlook iframe {
+  height:700px;
+   width:100%;
+   float: center;
+}
+iframe:focus {
+  outline: none;
 }
 
-.meetings {
-  grid-area: meetings;
+iframe[seamless] {
+  display: block;
 }
 
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'calendar calendar meetings'
-    'map media weather_time';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
+#slideshow {
+  margin: 0;
+  float: left;
+   height:auto;
+   width: 27%;
 }
 
-.map,
-.media,
-.weather_time {
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+.slide {
+  display: none;
 }
 
-/* Style the left column */
-.map {
-  grid-area: map;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
 }
 
-/* Style the middle column */
-.media {
-  grid-area: media;
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-/* Style the right column */
-.weather_time {
-  grid-area: weather_time;
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-/* Style the footer */
+/* .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
