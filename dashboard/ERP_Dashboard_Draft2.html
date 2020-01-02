@@ -2,54 +2,33 @@
 <html>
   <head>
     <link rel = "shortcut icon" type = "image/x-icon" href = "favicon.ico"/>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "style2.css">
     <title>ERP Dashboard</title>
+
   </head>
 
   <body>
-    <div id = "outlook">
-      <iframe src = "https://outlook.office365.com/owa/calendar/0d22fe0aeee94b87842be06078a0d883@stocktonca.gov/76481b92ca8a4cf1a3cee80053388d7616058285472872226012/calendar.html">hello</iframe>
-    </div>
-
-    <div id = "slideshow">
-      <div class = "slide fade">
-        <img src = "photos/left_start.jpeg" style = "width:100%">
-      </div>
-      <div class = "slide fade">
-        <img src = "photos/right_start.jpeg" style = "width:100%">
+    <div id = "top-portion">
+      <div id = "poster">
+        <img src = "photos/wwc.jpg">
+        <div id = "outlook">
+          <iframe src = "https://outlook.office365.com/owa/calendar/0d22fe0aeee94b87842be06078a0d883@stocktonca.gov/2e482cb5fdff4cc992f89710916860f83139119365711642317/calendar.html"></iframe>
+        </div>
       </div>
     </div>
 
-    <!-- <div style="text-align:center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div> -->
+    <div id = "bottom-portion">
+      <div id = "slideshow">
 
+          <img src = "photos/right_start.jpeg">
+      </div>
 
-    <!--
-      adopted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
-    --->
-    <script>
-      var slideIndex = 0;
-      showSlides();
+      <div id = "phases">
+        <img src = "photos/ERP_phases.jpg">
+      </div>
+    </div>
 
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("slide");
-        // var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        // for (i = 0; i < dots.length; i++) {
-        //   dots[i].className = dots[i].className.replace(" active", "");
-        // }
-        slides[slideIndex-1].style.display = "block";
-        // dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5000); // Change image every 5 seconds
-      }
-    </script>
   </body>
+  <script src = "js_slideshow.js"></script>
 
 </html>

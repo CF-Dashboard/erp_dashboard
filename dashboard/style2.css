@@ -2,81 +2,57 @@ html,body {
   height:100%;
   margin: 0px;
   width: 100%;
-  background-image: url("photos/Marathon_Logo_Blue_Sticker.jpg");
+  background-image: url("photos/Marathon Logo_White.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#outlook iframe {
-  height:660px;
-  width:66%;
+/* --------------------- left div ------------------------- */
+#top-portion {
+  width: 100%;
+
   float: left;
+  display: block;
 }
 
-#newsletter {
-  margin-bottom: 0px;
-
-}
-
-#newsletter iframe {
-  height:660px;
-  width:33%;
-  margin-left: 5px;
-  margin-right:auto;
+#poster img {
+  width: 25%;
+  margin-left: 10px;
+  float: left;
+  height:auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
   /* float: center; */
 }
-
-/* iframe:focus {
-  outline: none;
-}
-
-iframe[seamless] {
-  display: block;
-} */
-
-#bottom-half {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 #slideshow img {
-  height:auto;
-  width: 95%;
+  width: 30%;
 }
 
-#poster img{
-  align-content: center;
-  width: 63.5%;
-}
-
-#floor img {
-  height:auto;
-  width: 97%;
-}
-
-#weather {
-  margin: 0px;
-}
-
-#weather img {
+/* --------------------- right div ------------------------- */
+#bottom-portion {
+  width: 100%;
   float: left;
-  width: 19.35%;
-    margin: 0px;
 }
 
-#time {
+#outlook iframe {
+  margin-top: 5px;
+  margin-left: 40px;
+  height:557px;
+  width:70%;
   float: left;
-  margin: 0px;
+
 }
 
-.column {
+#phases img{
   float: left;
-  width: 33.33%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slide {
   display: none;
+
 }
 
 .fade {
