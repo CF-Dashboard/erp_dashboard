@@ -7,58 +7,67 @@ html,body {
   background-position: center;
 }
 
-/* --------------------- left div ------------------------- */
+
 #top-portion {
-  width: 100%;
-  float: left;
-  display: block;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-#poster img {
-  width: 25%;
+#slideshow img {
+  height:auto;
+  width: 31%;
+  float:left;
+}
+
+#poster img{
+  float: left;
+  width: 20.8%;
+}
+
+#floor img {
+  float: left;
+  width: 31.6%;
+}
+
+#weather {
+  margin: 0px;
+}
+
+#weather img {
+  float: left;
+  margin-left: 5px;
+  margin-top: 20px;
+  width: 15%;
+}
+
+#bottom-portion {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#bottom-portion img {
+  width: 26%;
   margin-left: 10px;
   float: left;
   height:auto;
   margin-top: 5px;
   margin-bottom: 5px;
-  /* float: center; */
-}
-#slideshow img {
-  float: left;
-  height:auto;
-  width: 25%;
-  margin: none;
-}
-
-/* --------------------- right div ------------------------- */
-#bottom-portion {
-  width: 100%;
-  float: left;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom:5px;
-  margin-top: 25px;
 }
 
 #outlook iframe {
-  margin-top: 5px;
-  margin-left: 40px;
-  height:557px;
-  width:68%;
+  height:635px;
+  width:66%;
   float: left;
-
-}
-
-#phases img{
-  float: left;
-  width: 70%;
-  margin-left: 45px;
-  margin-right: auto;
+  margin-left: 50px;
+  margin-top: 6px;
 }
 
 .slide {
   display: none;
-  width: 100%;
 }
 
 .fade {
