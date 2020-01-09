@@ -98,13 +98,13 @@ img {
     clear: both;
 }
 
-.example1 {
+.marqueeText {
     height: 50px;	
     overflow: hidden;
     position: relative;
 }
 
-.example1 h3 {
+.marqueeText h3 {
     font-size: 3em;
     color: white;
     text-shadow: 2px 2px Blue;
@@ -114,10 +114,12 @@ img {
     margin: 0;
     line-height: 50px;
     text-align: center;
+    
  /* Starting position */
     -moz-transform:translateX(100%);
     -webkit-transform:translateX(100%);	
     transform:translateX(100%);
+    
  /* Apply animation to this element */	
     -moz-animation: example1 30s linear infinite;
     -webkit-animation: example1 30s linear infinite;
@@ -126,24 +128,26 @@ img {
 
 /* Move it (define the animation) */
 @-moz-keyframes example1 {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
 }
+
 @-webkit-keyframes example1 {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
 }
+
 @keyframes example1 {
- 0%   { 
- -moz-transform: translateX(100%); /* Firefox bug fix */
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- transform: translateX(-100%); 
- }
+    0%   { 
+        -moz-transform: translateX(100%); /* Firefox bug fix */
+        -webkit-transform: translateX(100%); /* Firefox bug fix */
+        transform: translateX(100%); 		
+         }
+    100% { 
+        -moz-transform: translateX(-100%); /* Firefox bug fix */
+        -webkit-transform: translateX(-100%); /* Firefox bug fix */
+        transform: translateX(-100%); 
+         }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -181,10 +185,12 @@ img {
     margin: 0;
     line-height: 50px;
     text-align: center;
+    
 /* Starting position */
     -moz-transform:translateX(100%);
     -webkit-transform:translateX(100%);
     transform:translateX(100%);
+    
 /* Apply animation to this element */
     -moz-animation: scroll-left 15s linear infinite;
     -webkit-animation: scroll-left 15s linear infinite;
