@@ -52,17 +52,26 @@
 
 /*=================BOTTOM COLUMNS================*/
 /* Create three equal columns that floats next to each other */
-.columnSide {
+.columnLeft {
     float: left;
-    width: 40.33%;
+    width: 30.33%;
+    align-items: center;
+}
+.columnMiddle {
+    float: left;
+    width: 50.33%;
     align-items: center;
 }
 
-.columnCenter {
+.columnRight {
     float: left;
     width: 19.33%;
     max-height: 50%;
     min-height: 25%;
+}
+
+.columnRight a {
+  align-items: center;
 }
 
 /*=================ELEMENTS================*/
@@ -93,7 +102,8 @@ img {
 }
 
 .marqueeText {
-    height: 50px;
+    padding: .7%;
+    height: 8%;
     overflow: hidden;
     position: relative;
 }
