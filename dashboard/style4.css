@@ -6,15 +6,15 @@
 /*===============RESPONSIVE TO SCREEN SIZE==================*/
 @media screen and (max-width: 1920px) {
     body {
-        height: 1080px;
-        width: 1920px;
+        height: 1064px;
+        width: 1910px;
     }  
 }
 
 @media screen and (max-width: 1600px) {
     body {
-        height: 900px;
-        width: 1600px;
+        height: 884px;
+        width: 1580px;
     }  
 }
 
@@ -32,61 +32,29 @@
     }
 }
 
-
-/*=================BEGIN================*/
-.body {
-    font-family: Arial, Helvetica, sans-serif; 
-}
-
-.header {
-    padding: 0px;
+/*=================ROWS================*/
+.row-Top, .row-Bottom {
+    height: 45%;
     width: 100%;
-    font-size: 35px;
-    height:45%;
+    padding-right: .5%;
 }
 
-.header, .columnSide,  {
+.row-Top, .columnSide,  {
     min-height: 50%;
     max-height: 50%;
 }
 
-img {
-    width:100%;
-    height: 100%;
+/* Clear floats after the columns */
+.row-Bottom, .row-Top:after {
+    display: table;
+    clear: both;
 }
 
-#announcements, 
-#calendar {
-    min-height: 100%;
-    max-height: 100%;
-    float: left;
-    padding-top: 10px;
-}
-
-#announcements {
-    min-width: 25%;
-    max-width: 25%;
-    padding-left: 10px;
-    padding-right: 5px;
-}
-
-#calendar {
-    min-width: 74%;
-    max-width: 75%;
-    height:100%;
-    padding-right: 25px;
-    padding-left: 5px;
-}
-
-.row {
-    height: 45%;
-}
-
+/*=================BOTTOM COLUMNS================*/
 /* Create three equal columns that floats next to each other */
 .columnSide {
     float: left;
     width: 40.33%;
-    padding: .5%;
     align-items: center;
 }
 
@@ -97,10 +65,28 @@ img {
     min-height: 25%;    
 }
 
-/* Clear floats after the columns */
-.row:after {
-    display: table;
-    clear: both;
+/*=================ELEMENTS================*/
+
+#announcements, 
+#calendar {
+    min-height: 100%;
+    max-height: 100%;
+    float: left;
+}
+
+#announcements {
+    width: 25%;
+    padding-right: 1%;
+}
+
+#calendar {
+    width: 75%;
+    height: 100%;
+}
+
+img {
+    width:100%;
+    height: 100%;
 }
 
 .marqueeText {
@@ -119,18 +105,17 @@ img {
     margin: 0;
     line-height: 50px;
     text-align: center;
-    
  /* Starting position */
     -moz-transform:translateX(100%);
     -webkit-transform:translateX(100%);	
     transform:translateX(100%);
-    
  /* Apply animation to this element */	
     -moz-animation: marqueeText 30s linear infinite;
     -webkit-animation: marqueeText 30s linear infinite;
     animation: marqueeText 30s linear infinite;
 }
 
+/*=================ANIMATION================*/
 /* Move it (define the animation) */
 @-moz-keyframes marqueeText {
     0%   { -moz-transform: translateX(100%); }
