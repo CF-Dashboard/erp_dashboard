@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel = "shortcut icon" type = "image/x-icon" href = "favicon.ico"/>
-    <link rel = "stylesheet" href = "style4.css">
-    <title>ERP Dashboard</title>
-
+      <title>ERP Dashboard</title>
+      <link rel = "shortcut icon" type = "image/x-icon" href = "favicon.ico"/>
+      <link rel = "stylesheet" href = "style4.css">
+      <script src = "js_slideshow.js"></script>
+      <script src = "js_time.js"></script>
   </head>
-
+    
   <body>  
       <!--FIRST ROW-->
       <div class="header">  
@@ -20,28 +21,27 @@
       <div class="marqueeText">
         <h3>System Design Week Now in Session!</h3>
       </div>
+
       
       <!--SECOND ROW-->
-      <div class="row">
-          
+      <div class="row">    
           <!--COLUMN 1-->
           <div class="columnSide">
-              <!--SLIDESHOW-->
-            <div id = "slideshow">
-                <div class = "slide fade">
-                    <img src = "photos/gallery/left_start.jpeg"
-                         alt="Runners starting from the left">
-                </div> 
-                <div class = "slide fade">
-                    <img src = "photos/gallery/right_start.jpeg"
-                         alt = "Runners starting from the right">
-                </div>
-            </div>
+             <iframe width="100%" height=500 src="http://s44.photobucket.com/user/ivanlopez1/embed/slideshow/ERP"></iframe>
           </div>
-          
           <!--COLUMN 2-->
           <div class="columnCenter">
-            <a target="_blank" href="https://www.booked.net/weather/stockton-1579" >
+              <!--CLOCK WIDGET-->
+            <div style="text-align:center;">
+                    <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=America%2FLos_Angeles" 
+                            width="100%" 
+                            height="140" 
+                            frameborder="0" 
+                            seamless>
+                    </iframe> 
+            </div>
+              <!--WEATHER WIDGET-->
+              <a target="_blank" href="https://www.booked.net/weather/stockton-1579" >
                 <img src="https://w.bookcdn.com/weather/picture/32_1579_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34816"  
                 alt="booked.net">
             </a>
@@ -49,10 +49,10 @@
           
           <!--COLUMN 3-->
           <div class="columnSide">
+              <!-- FLOOR MAP-->
               <img src = "photos/floor.png">
           </div>
       </div>
-  <script src = "js_slideshow.js"></script>
-  <script src = "js_time.js"></script>
+
   </body>
 </html>
