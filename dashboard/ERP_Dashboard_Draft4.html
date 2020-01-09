@@ -7,15 +7,66 @@
 
   </head>
 
+    <!-- Styles -->	
+<style>
+.example1 {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ font-size: 3em;
+ color: white;
+    text-shadow: 2px 2px Blue;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: example1 30s linear infinite;
+ -webkit-animation: example1 30s linear infinite;
+ animation: example1 30s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
+    
   <body>  
       <!--FIRST ROW-->
       <div class="header">  
         <img id = "announcements" 
              src = "photos/Announcements/flyer.jpg">
         <iframe id = "calendar"
-                src = "https://outlook.office365.com/owa/calendar/0d22fe0aeee94b87842be06078a0d883@stocktonca.gov/2e482cb5fdff4cc992f89710916860f83139119365711642317/calendar.html"></iframe>
+                src = "https://outlook.office365.com/owa/calendar/cd80c76c380f4384a532846f813134ff@stocktonca.gov/7ee50987bd3542e1a8601a6e92a443099036764206783828677/calendar.html"></iframe>
       </div>
-      
+            <div class="example1">
+        <h3>System Design Week Now in Session!</h3>
+      </div>
       <!--SECOND ROW-->
       <div class="row">
           

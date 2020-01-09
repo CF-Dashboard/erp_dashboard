@@ -34,7 +34,7 @@
     padding: 0px;
     width: 100%;
     font-size: 35px;
-    height:50%;
+    height:45%;
 }
 
 .header, .columnSide,  {
@@ -71,7 +71,7 @@ img {
 }
 
 .row {
-    height: 50%;
+    height: 45%;
 }
 
 /* Create three equal columns that floats next to each other */
