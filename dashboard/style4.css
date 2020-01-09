@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-    background-color: #2c3e50;
+    
+    
 }
 
 /*===============RESPONSIVE TO SCREEN SIZE==================*/
@@ -8,6 +9,7 @@
     body {
         height: 1064px;
         width: 1910px;
+        background-image: linear-gradient(to right, #3b81c8, #2c3e50);
     }
 }
 
@@ -85,7 +87,7 @@
 
 #announcements {
     width: 25%;
-    padding-right: 1%;
+
 }
 
 #calendar {
@@ -94,7 +96,7 @@
 }
 
 a img {
-    width: 90%;
+    width: 97.4%;
 }
 img {
     width:100%;
@@ -109,9 +111,10 @@ img {
 }
 
 .marqueeText h3 {
+    background-color: none;
     font-size: 3em;
     color: white;
-    text-shadow: 2px 2px Blue;
+    text-shadow: 2px 2px black;
     position: absolute;
     width: 100%;
     height: 100%;
