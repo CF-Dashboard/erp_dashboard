@@ -1,128 +1,167 @@
 * {
   box-sizing: border-box;
+    background-color: #2c3e50;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
+/*===============RESPONSIVE TO SCREEN SIZE==================*/
+@media screen and (max-width: 1920px) {
+    body {
+        height: 1080px;
+        width: 1920px;
+    }  
 }
 
-/* Style the header */
+@media screen and (max-width: 1600px) {
+    body {
+        height: 900px;
+        width: 1600px;
+    }  
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        height: 1024px;
+        width: 1280px;
+    }  
+}
+
+/*=================BEGIN================*/
+.body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
 .header {
-  background-color: #f1f1f1;
-  padding: 0px;
-  width: 100%;
-  font-size: 35px;
+    padding: 0px;
+    width: 100%;
+    font-size: 35px;
     height:50%;
 }
 
-.header, .column {
+.header, .columnSide,  {
     min-height: 50%;
     max-height: 50%;
-    
+}
+
+img {
+    width:100%;
+    height: 100%;
 }
 
 #announcements, 
 #calendar {
     min-height: 100%;
     max-height: 100%;
-    
-    float: left"
+    float: left;
+    padding-top: 10px;
 }
 
 #announcements {
     min-width: 25%;
     max-width: 25%;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 
 #calendar {
-     min-width: 74.48%;
-     max-width: 75%;
-    height:
+    min-width: 74%;
+    max-width: 75%;
+    height:100%;
+    padding-right: 25px;
+    padding-left: 5px;
+}
+
+.row {
+    height: 50%;
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 0px;
+.columnSide {
+    float: left;
+    width: 40.33%;
+    padding: .5%;
+    align-items: center;
+}
+
+.columnCenter {
+    float: left;
+    width: 19.33%;
+    max-height: 50%;
+    min-height: 25%;
+    padding-top: 4.5%;
+    
 }
 
 /* Clear floats after the columns */
 .row:after {
-  display: table;
-  clear: both;
+    display: table;
+    clear: both;
 }
-
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  .column {
-    width: 100%;
+  .columnSide {
+      width: 100%;
   }
     
 .slide {
-  display: none;
-  width: 100%;
-    
+    display: none;
+    width: 100%;
 }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.5s;
-  animation-name: fade;
-  animation-duration: 0.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
     
-    #slideImage {
-    height:300px;
-    width: 300px;
-    }
-
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 #slideshow {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);
- transform:translateX(100%);
- /* Apply animation to this element */
- -moz-animation: scroll-left 15s linear infinite;
- -webkit-animation: scroll-left 15s linear infinite;
- animation: scroll-left 15s linear infinite;
-    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+/* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);
+    transform:translateX(100%);
+/* Apply animation to this element */
+    -moz-animation: scroll-left 15s linear infinite;
+    -webkit-animation: scroll-left 15s linear infinite;
+    animation: scroll-left 15s linear infinite;    
 }
+    
 /* Move it (define the animation) */
 @-moz-keyframes bottom-portion {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
 }
+    
 @-webkit-keyframes bottom-portion {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
 }
+    
 @keyframes bottom-portion {
- 0%   {
- -moz-transform: translateX(100%); /* Browser bug fix */
- -webkit-transform: translateX(100%); /* Browser bug fix */
- transform: translateX(100%);
+    0%   {
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%);
  }
+    
  100% {
- -moz-transform: translateX(-100%); /* Browser bug fix */
- -webkit-transform: translateX(-100%); /* Browser bug fix */
- transform: translateX(-100%);
+     -moz-transform: translateX(-100%); /* Browser bug fix */
+     -webkit-transform: translateX(-100%); /* Browser bug fix */
+     transform: translateX(-100%);
  }
