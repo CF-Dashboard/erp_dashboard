@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>ERP Dashboard</title>
+      <link rel = "shortcut icon" type = "image/x-icon" href = "favicon.ico"/>
+      <link rel = "stylesheet" href = "style_2.css">
+      <script src = "js_slideshow.js"></script>
+      <script src = "js_time.js"></script>
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script type="text/javascript">
+  tinymce.init({
+    selector: '#myeditablediv',
+    inline: true
+  });
+  </script>
+  </head>
+
+  <body>
+      <!--FIRST ROW-->
+      <div class="row-Top">
+        <iframe id = "announcements" width = 100% height = 100% src="http://s44.photobucket.com/user/ivanlopez1/embed/slideshow/Announcements-Flyers"frameborder="1px"
+              seamless></iframe>
+        <iframe id = "calendar"
+                src = "https://outlook.office365.com/owa/calendar/cd80c76c380f4384a532846f813134ff@stocktonca.gov/7ee50987bd3542e1a8601a6e92a443099036764206783828677/calendar.html"></iframe>
+      </div>
+
+      <!--MARQUEE SIDE SCROLLER TEXT-->
+      <div class="marqueeText">
+     <!-----THIS IS A WORK IN PROGRESS, DOMAIN NEEDS TO BE REGISTERED-->
+        <form method="post">
+            <div id="myeditablediv"><h3>Welcome to the ERP Department! (Enterprise Resource Planning)</h3></div>
+        </form>
+      </div>
+
+      <!--SECOND ROW-->
+      <div class="row-Bottom">
+          <!--COLUMN 1-->
+          <div class="columnLeft">
+             <iframe width="100%" height=500px src="http://s44.photobucket.com/user/ivanlopez1/embed/slideshow/ERP"></iframe>
+          </div>
+
+          <!--COLUMN 2-->
+          <div class="columnMiddle">
+              <!-- FLOOR MAP-->
+              <iframe width="100%" height=500px src="http://s44.photobucket.com/user/ivanlopez1/embed/slideshow/Maps-Stages"></iframe>
+          </div>
+
+          <!--COLUMN 3-->
+          <div class="columnRight">
+            <!--WEATHER WIDGET-->
+            <a target="_blank" href="https://www.booked.net/weather/stockton-1579">
+                <img src="https://w.bookcdn.com/weather/picture/32_1579_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34816"
+                alt="booked.net">
+              </a>
+            <!--CLOCK WIDGET-->
+            <div style="text-align: center">
+                <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=America%2FLos_Angeles"
+                width="100%"
+                height="140"
+                frameborder="0"
+                seamless>
+                </iframe>
+            </div>
+          </div>
+      </div>
+
+  </body>
+</html>
